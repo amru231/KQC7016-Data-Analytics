@@ -213,4 +213,4 @@ Key takeaways from this lab include:
 
 ---
 
-**GitHub Link:** [To be added]
+**GitHub Link:** [KQC7016-Data-Analytics](https://github.com/amru231/KQC7016-Data-Analytics)
