@@ -19,6 +19,7 @@ Thumbs.db
 
 # Claude Code internal
 .claude/
+CLAUDE.md
 
 # Windows metadata
 *:Zone.Identifier
