@@ -1,7 +1,12 @@
 # KQC7016 Data Analytics
 
 **Program:** Masters of Systems Engineering  
-**Course:** KQC7016 Data Analytics
+**Course:** KQC7016 Data Analytics SEM 2 25/26
+**Instructor:** ASSOCIATE PROF. IR. DR. CHOW CHEE ONN
+
+Group Members
+1. Muhammad Amru Bin Mohamad Sharis (S2116804)
+2. Nor Shahadah Fitrah Binti Ramani (25073210)
 
 Labs are worth 5% carry mark each and are completed in groups of two.
 
