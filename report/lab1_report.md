@@ -160,6 +160,8 @@ The filtering operation found **10 out of 100** jobs containing "python" in the 
 
 The modified code successfully scraped **10 quotes** from `quotes.toscrape.com`:
 
+![Modified Code - Quotes Output](../lab1/screenshots/modified_quotes.png)
+
 | # | Quote (excerpt) | Author |
 |---|-----------------|--------|
 | 1 | "The world as we have created it is a process of our thinking..." | Albert Einstein |
