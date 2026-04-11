@@ -125,6 +125,8 @@ A total of **100 job listings** were extracted from the page. Each listing conta
 
 The output also demonstrated the importance of `.text.strip()` over `.text` — the location field in particular contained significant leading/trailing whitespace when accessed with `.text` alone.
 
+![Part D - Job Elements](../lab1/screenshots/partD_job_elements.png)
+
 Sample output (first 5 jobs):
 
 | # | Job Title | Company | Location |
