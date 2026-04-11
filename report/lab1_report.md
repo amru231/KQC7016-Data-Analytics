@@ -141,6 +141,8 @@ Sample output (first 5 jobs):
 
 The filtering operation found **10 out of 100** jobs containing "python" in the title:
 
+![Part E - Python Jobs](../lab1/screenshots/partE_python_jobs.png)
+
 | # | Job Title | Company | Location |
 |---|-----------|---------|----------|
 | 1 | Senior Python Developer | Payne, Roberts and Davis | Stewartbury, AA |
