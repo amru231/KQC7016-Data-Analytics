@@ -102,6 +102,8 @@ The key differences from the original code:
 
 Running `page.text` returned the complete HTML source code of the Fake Python jobs page, totalling 104,429 characters. The raw output includes all HTML tags, CSS class names, and the actual content mixed together, making it difficult to read or extract useful data directly.
 
+![Part A - Raw HTML Output](../lab1/screenshots/partA_raw_html.png)
+
 ### 3.2 Part B - BeautifulSoup Parsed Output
 
 After parsing with BeautifulSoup, the output was formatted with proper indentation using `prettify()`. While visually similar to the raw HTML, the data is now stored as a navigable object, allowing programmatic access to any element by tag name, class, or ID.
