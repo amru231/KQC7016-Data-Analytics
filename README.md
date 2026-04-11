@@ -65,6 +65,22 @@ The `Energy.csv` dataset contains hourly energy consumption readings for a build
 
 ---
 
+## Lecture Weeks
+
+### Week 5 — EDA Visualization using Seaborn
+Exploratory Data Analysis using Seaborn on a synthetic employee productivity dataset (300 employees across 5 departments).
+
+- [`week5/EDA_Visualization_with_Seaborn.ipynb`](week5/EDA_Visualization_with_Seaborn.ipynb) — Seaborn visualization notebook
+- [`week5/plot_interpretations.md`](week5/plot_interpretations.md) — Annotated interpretations for each plot
+- [`week5/plots/`](week5/plots/) — Generated PNG plots (9 visualisations)
+- [`week5/employee_productivity.csv`](week5/employee_productivity.csv) — Dataset
+
+**Topics covered:** Univariate (histogram, boxplot, countplot), Bivariate (scatterplot, lineplot, barplot), Multivariate (pairplot, heatmap, violin plot)
+
+**Key findings:** Salary follows a Normal distribution; no linear relationship between experience/age and salary; Work_Hours and Satisfaction_Level have a notable negative correlation (-0.47); overtime is associated with lower satisfaction levels.
+
+---
+
 ## Tools and Libraries
 
 - Python 3
