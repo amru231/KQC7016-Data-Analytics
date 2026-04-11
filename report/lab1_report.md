@@ -108,6 +108,8 @@ Running `page.text` returned the complete HTML source code of the Fake Python jo
 
 After parsing with BeautifulSoup, the output was formatted with proper indentation using `prettify()`. While visually similar to the raw HTML, the data is now stored as a navigable object, allowing programmatic access to any element by tag name, class, or ID.
 
+![Part B - BeautifulSoup Parsed Output](../lab1/screenshots/partB_soup.png)
+
 ### 3.3 Part C - Results Container
 
 Using `soup.find(id="ResultsContainer")` successfully isolated the main content area containing all job listings, filtering out the page header, stylesheets, and other irrelevant HTML elements.
