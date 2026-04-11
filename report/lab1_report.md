@@ -114,6 +114,8 @@ After parsing with BeautifulSoup, the output was formatted with proper indentati
 
 Using `soup.find(id="ResultsContainer")` successfully isolated the main content area containing all job listings, filtering out the page header, stylesheets, and other irrelevant HTML elements.
 
+![Part C - ResultsContainer](../lab1/screenshots/partC_results_container.png)
+
 ### 3.4 Part D - Extracted Job Listings
 
 A total of **100 job listings** were extracted from the page. Each listing contains:
