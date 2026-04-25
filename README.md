@@ -26,42 +26,37 @@ Study and run a provided web scraping script, then modify it to scrape a differe
 ---
 
 ### Lab 2 — Exploratory Data Analysis (EDA)
-Perform EDA on the Energy dataset and produce meaningful visualisations.
+Perform EDA on the World Energy dataset and produce meaningful visualisations.
 
 - [`lab2/Lab2.py`](lab2/Lab2.py) — EDA script
-- [`lab2/Energy.csv`](lab2/Energy.csv) — Dataset
+- [`dataset/WorldEnergy.csv`](dataset/WorldEnergy.csv) — Dataset
 - [`report/lab2_report.md`](report/lab2_report.md) — Lab report
-
-**Dataset features:** Timestamp, Temperature, Humidity, SquareFootage, Occupancy, HVACUsage, LightingUsage, RenewableEnergy, DayOfWeek, Holiday, EnergyConsumption
 
 ---
 
 ### Lab 3 — ANOVA
-Demonstrate an ANOVA test on the Energy dataset, with justification for variable selection.
+Demonstrate an ANOVA test on the World Energy dataset, with justification for variable selection.
 
 - [`lab3/Lab3.py`](lab3/Lab3.py) — ANOVA script
-- [`lab3/Energy.csv`](lab3/Energy.csv) — Dataset
+- [`dataset/WorldEnergy.csv`](dataset/WorldEnergy.csv) — Dataset
 - [`report/lab3_report.md`](report/lab3_report.md) — Lab report
 
 ---
 
 ## Dataset
 
-The `Energy.csv` dataset contains hourly energy consumption readings for a building, with the following features:
+The `WorldEnergy.csv` dataset (located in `dataset/`) contains global energy statistics by country and year, sourced from Our World in Data. It covers production and consumption across all major energy types.
 
-| Feature | Description |
+| Feature Group | Key Columns |
 |---|---|
-| Timestamp | Date and time of reading |
-| Temperature | Ambient temperature (°C) |
-| Humidity | Relative humidity (%) |
-| SquareFootage | Building area (sq ft) |
-| Occupancy | Number of occupants |
-| HVACUsage | HVAC system energy draw |
-| LightingUsage | Lighting energy draw |
-| RenewableEnergy | Renewable energy contribution |
-| DayOfWeek | Day of the week |
-| Holiday | Whether it is a public holiday |
-| EnergyConsumption | Total energy consumption (target variable) |
+| Identifiers | `country`, `year`, `iso_code`, `population`, `gdp` |
+| Primary Energy | `primary_energy_consumption`, `energy_per_capita`, `energy_per_gdp` |
+| Fossil Fuels | `coal_consumption`, `oil_consumption`, `gas_consumption`, `fossil_fuel_consumption` |
+| Renewables | `renewables_consumption`, `solar_consumption`, `wind_consumption`, `hydro_consumption`, `biofuel_consumption` |
+| Low Carbon | `low_carbon_consumption`, `nuclear_consumption` |
+| Electricity | `electricity_generation`, `electricity_demand`, `per_capita_electricity` |
+| Emissions | `greenhouse_gas_emissions`, `carbon_intensity_elec` |
+| Share Metrics | `renewables_share_energy`, `fossil_share_energy`, `low_carbon_share_elec`, etc. |
 
 ---
 
