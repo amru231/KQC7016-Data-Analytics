@@ -28,7 +28,7 @@ Study and run a provided web scraping script, then modify it to scrape a differe
 ### Lab 2 — Exploratory Data Analysis (EDA)
 Perform EDA on the World Energy dataset and produce meaningful visualisations.
 
-- [`lab2/Lab2.py`](lab2/Lab2.py) — EDA script
+- [`lab2/lab2.py`](lab2/lab2.py) — EDA script
 - [`dataset/WorldEnergy.csv`](dataset/WorldEnergy.csv) — Dataset
 - [`report/lab2_report.md`](report/lab2_report.md) — Lab report
 
@@ -37,9 +37,35 @@ Perform EDA on the World Energy dataset and produce meaningful visualisations.
 ### Lab 3 — ANOVA
 Demonstrate an ANOVA test on the World Energy dataset, with justification for variable selection.
 
-- [`lab3/Lab3.py`](lab3/Lab3.py) — ANOVA script
+- [`lab3/lab3.py`](lab3/lab3.py) — ANOVA script
 - [`dataset/WorldEnergy.csv`](dataset/WorldEnergy.csv) — Dataset
 - [`report/lab3_report.md`](report/lab3_report.md) — Lab report
+
+---
+
+## Assignments
+
+### Assignment 1 — Exploratory Data Analytics
+Apply Exploratory Data Analysis (EDA) and statistical hypothesis testing to a real-world dataset using Python.
+
+- [`assignment1/KQC7016_20252026S2_Asgn1.pdf`](assignment1/KQC7016_20252026S2_Asgn1.pdf) — Assignment brief
+
+**Main requirements:** Jupyter Notebook and brief report, maximum 10 pages.
+
+**Report format:** Cover Page, Introduction, Description of Datasets, Exploratory Data Analysis, Statistical Analysis, Conclusion, References.
+
+---
+
+### Assignment 2 — AI for Medicine
+Apply advanced data analytics techniques to a medical or healthcare-related problem using an end-to-end data analysis pipeline.
+
+- [`assignment2/KQC7016_20252026S2_Asgn2.pdf`](assignment2/KQC7016_20252026S2_Asgn2.pdf) — Assignment brief
+
+**Main requirements:** Technical report, maximum 15 pages, GitHub link in report, and 5-minute recorded presentation.
+
+**Methods requirement:** Use at least two different analytics methods, such as regression, clustering, association rule mining, or classification.
+
+**Report format:** Cover Page, Abstract, Introduction, Problem Definition, Data Description & EDA, Proposed AI-based Solution Concept, Results & Discussion, Conclusion, References.
 
 ---
 
@@ -57,24 +83,6 @@ The `WorldEnergy.csv` dataset (located in `dataset/`) contains global energy sta
 | Electricity | `electricity_generation`, `electricity_demand`, `per_capita_electricity` |
 | Emissions | `greenhouse_gas_emissions`, `carbon_intensity_elec` |
 | Share Metrics | `renewables_share_energy`, `fossil_share_energy`, `low_carbon_share_elec`, etc. |
-
----
-
-## Lecture Weeks
-
-### Week 5 — EDA Visualization using Seaborn
-Exploratory Data Analysis using Seaborn on a synthetic employee productivity dataset (300 employees across 5 departments).
-
-- [`week5/EDA_Visualization_with_Seaborn.ipynb`](week5/EDA_Visualization_with_Seaborn.ipynb) — Seaborn visualization notebook
-- [`week5/plot_interpretations.md`](week5/plot_interpretations.md) — Annotated interpretations for each plot
-- [`week5/plots/`](week5/plots/) — Generated PNG plots (9 visualisations)
-- [`week5/employee_productivity.csv`](week5/employee_productivity.csv) — Dataset
-
-**Topics covered:** Univariate (histogram, boxplot, countplot), Bivariate (scatterplot, lineplot, barplot), Multivariate (pairplot, heatmap, violin plot)
-
-**Key findings:** Salary follows a Normal distribution; no linear relationship between experience/age and salary; Work_Hours and Satisfaction_Level have a notable negative correlation (-0.47); overtime is associated with lower satisfaction levels.
-
----
 
 ## Tools and Libraries
 
