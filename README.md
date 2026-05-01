@@ -32,6 +32,8 @@ Perform EDA on the World Energy dataset and produce meaningful visualisations.
 - [`dataset/WorldEnergy.csv`](dataset/WorldEnergy.csv) — Dataset
 - [`report/lab2_report.md`](report/lab2_report.md) — Lab report
 
+**Libraries used:** `pandas`, `matplotlib`, `seaborn`
+
 ---
 
 ### Lab 3 — ANOVA
@@ -40,6 +42,8 @@ Demonstrate an ANOVA test on the World Energy dataset, with justification for va
 - [`lab3/lab3.py`](lab3/lab3.py) — ANOVA script
 - [`dataset/WorldEnergy.csv`](dataset/WorldEnergy.csv) — Dataset
 - [`report/lab3_report.md`](report/lab3_report.md) — Lab report
+
+**Libraries used:** `pandas`, `numpy`, `matplotlib`, `seaborn`, `scipy`, `statsmodels`
 
 ---
 
