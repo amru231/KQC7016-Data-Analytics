@@ -50,6 +50,8 @@ Apply Exploratory Data Analysis (EDA) and statistical hypothesis testing to a re
 
 - [`assignment1/KQC7016_20252026S2_Asgn1.pdf`](assignment1/KQC7016_20252026S2_Asgn1.pdf) — Assignment brief
 
+**Selected theme:** Autonomous Driving.
+
 **Main requirements:** Jupyter Notebook and brief report, maximum 10 pages.
 
 **Report format:** Cover Page, Introduction, Description of Datasets, Exploratory Data Analysis, Statistical Analysis, Conclusion, References.

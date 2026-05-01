@@ -9,6 +9,11 @@ venv/
 # Jupyter
 .ipynb_checkpoints/
 
+# Local lecture/reference materials only
+week5/
+week6/
+week7/
+
 # OS
 .DS_Store
 Thumbs.db
