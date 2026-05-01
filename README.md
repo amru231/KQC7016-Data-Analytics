@@ -52,7 +52,7 @@ Apply Exploratory Data Analysis (EDA) and statistical hypothesis testing to a re
 
 **Selected theme:** Autonomous Driving.
 
-**Main requirements:** Jupyter Notebook and brief report, maximum 10 pages.
+**Main requirements:** Jupyter Notebook and brief report, ∼10 pages.
 
 **Report format:** Cover Page, Introduction, Description of Datasets, Exploratory Data Analysis, Statistical Analysis, Conclusion, References.
 
