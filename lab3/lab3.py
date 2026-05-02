@@ -1,22 +1,3 @@
-"""
-KQC7016 Data Analytics — Lab 3: ANOVA
-Group: Muhammad Amru (S2116804) & Nor Shahadah Fitrah (25073210)
-
-Dataset : WorldEnergy.csv (Our World in Data)
-Objective: Demonstrate One-Way and Two-Way ANOVA on world energy data.
-
-Research Questions:
-  Q1 (One-Way) : Does the mean renewable energy share differ significantly
-                 across year groups (decades)?
-  Q2 (Two-Way) : Do year group AND fossil dominance category, including their
-                 interaction, significantly affect renewable energy share?
-
-Columns chosen:
-  Dependent   : renewables_share_energy  (% of primary energy from renewables)
-  Factor 1    : year_group               (decade bins: 1990s, 2000s, 2010s, 2020s)
-  Factor 2    : fossil_dominance         (High / Low — split at dataset median)
-"""
-
 import os
 import numpy as np
 import pandas as pd
