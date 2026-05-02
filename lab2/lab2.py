@@ -1,3 +1,6 @@
+import os
+os.makedirs("plots", exist_ok=True)
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -8,26 +11,55 @@ print(df.head())
 print(df.info())
 print(df.describe())
 
-# Graph 1
+# -----------------------
+# Graph 1: Histogram
+# -----------------------
 plt.figure()
-sns.histplot(df.select_dtypes(include='number').iloc[:,0], kde=True)
-plt.title("Distribution")
+
+num_col = df.select_dtypes(include='number').columns[0]
+sns.histplot(df[num_col], kde=True)
+
+plt.title(f"Distribution of {num_col}")
+plt.xlabel(num_col)
+plt.ylabel("Frequency")
+plt.tight_layout()
+
+plt.savefig("plots/histogram.png", dpi=300)
 plt.show()
 
-# Graph 2
-plt.figure(figsize=(10, 6))
-corr = df.select_dtypes(include='number').corr()
-sns.heatmap(corr, cmap="coolwarm", linewidths=0.5)
-plt.title("Correlation Heatmap")
-plt.show()
 
-# A++ grade
-plt.figure(figsize=(12,8))
+# -----------------------
+# Graph 2: Full Heatmap
+# -----------------------
+plt.figure(figsize=(16, 12))
 
-corr = df.select_dtypes(include='number').iloc[:, :15].corr()
+corr_full = df.select_dtypes(include='number').corr()
 
 sns.heatmap(
-    corr,
+    corr_full,
+    cmap="coolwarm",
+    linewidths=0.2,
+    cbar=True
+)
+
+plt.title("Full Correlation Heatmap")
+plt.xticks(rotation=90)
+plt.yticks(rotation=0)
+plt.tight_layout()
+
+plt.savefig("plots/full_heatmap.png", dpi=300)
+plt.show()
+
+
+# -----------------------
+# Graph 3: Top 15 Heatmap
+# -----------------------
+plt.figure(figsize=(12, 8))
+
+corr_top15 = df.select_dtypes(include='number').iloc[:, :15].corr()
+
+sns.heatmap(
+    corr_top15,
     cmap="coolwarm",
     linewidths=0.3,
     cbar=True
@@ -38,4 +70,5 @@ plt.xticks(rotation=45, ha='right')
 plt.yticks(rotation=0)
 plt.tight_layout()
 
+plt.savefig("plots/top15_heatmap.png", dpi=300)
 plt.show()
