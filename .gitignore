@@ -22,12 +22,6 @@ Thumbs.db
 .vscode/
 .idea/
 
-# AI agent local context/artifacts
-.claude/
-.opencode/
-CLAUDE.md
-CLAUDE.local.md
-opencode
 
 # Windows metadata
 *:Zone.Identifier
