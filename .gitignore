@@ -25,3 +25,7 @@ Thumbs.db
 
 # Windows metadata
 *:Zone.Identifier
+
+# Saved-webpage clutter in assignment1 reference (keep PDFs + figures)
+assignment1/reference/*.html
+assignment1/reference/*_files/

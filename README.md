@@ -52,7 +52,9 @@ Demonstrate an ANOVA test on the World Energy dataset, with justification for va
 ### Assignment 1 — Exploratory Data Analytics
 Apply Exploratory Data Analysis (EDA) and statistical hypothesis testing to a real-world dataset using Python.
 
-- [`assignment1/KQC7016_20252026S2_Asgn1.pdf`](assignment1/KQC7016_20252026S2_Asgn1.pdf) — Assignment brief
+- [`assignment1/README.md`](assignment1/README.md) — Assignment 1 summary, methodology, and file index
+- [`assignment1/instruction/KQC7016_20252026S2_Asgn1.pdf`](assignment1/instruction/KQC7016_20252026S2_Asgn1.pdf) — Assignment brief
+- [`report/assignment1_report.md`](report/assignment1_report.md) — Full report
 
 **Selected theme:** Autonomous Driving.
 

@@ -1,0 +1,3 @@
+cluster,N,system,roadway,lighting,weather,crash_with
+0,3605,"ADS (58%), ADAS (42%)","Street (41%), Highway / Freeway (26%), Intersection (26%)","Daylight (38%), Other (29%), Dark - Lighted (25%)",Clear (100%),"Passenger Car (31%), SUV (18%), Other Fixed Object (11%)"
+1,1386,"ADAS (64%), ADS (36%)","Highway / Freeway (47%), Street (32%), Intersection (16%)","Daylight (48%), Other (31%), Dark - Lighted (12%)","Cloudy (85%), Rain (13%), Fog/Smoke (1%)","Other Fixed Object (24%), Passenger Car (22%), SUV (13%)"
