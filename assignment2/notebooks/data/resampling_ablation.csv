@@ -1,0 +1,5 @@
+,cv_macroF1,test_macroF1,accuracy,recall_mid,recall_high
+"RF baseline (6 feats, class_weight)",0.625,0.619,0.681,0.286,0.696
+RF + engineered vitals,0.623,0.59,0.659,0.238,0.696
+RF + SMOTE,0.641,0.556,0.648,0.143,0.696
+RF + SMOTE + engineered vitals,0.626,0.605,0.659,0.286,0.696

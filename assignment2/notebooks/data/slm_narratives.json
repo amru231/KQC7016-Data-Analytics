@@ -1,0 +1,161 @@
+{
+  "status": {
+    "Llama-3.2-1B": "ok (3)",
+    "Qwen3-1.7B": "ok (3)",
+    "Llama-3.2-3B": "ok (3)"
+  },
+  "narratives": {
+    "Llama-3.2-1B": [
+      {
+        "patient_id": 6,
+        "predicted_risk": "high",
+        "narrative": "Prediction: HIGH\nMain contributing factors: \n- SystolicBP = 140 mmHg (increases risk level)\n- BS = 15.0 mmol/L (increases risk level)\n- HeartRate = 90 bpm (increases risk level)\n\nRule-based support: \n- The patient's systolic blood pressure (SBP) is 140 mmHg, which is significantly higher than the predicted class threshold of 90 mmHg, indicating a high risk of cardiovascular complications.\n\nClinical interpretation: \nGiven the patient's elevated systolic blood pressure and low blood sugar, along with a normal body temperature, the clinical picture suggests that the patient is at high risk of cardiovascular complications.\n\nSafety note: \n- The patient's elevated blood pressure may require close monitoring and potential intervention to prevent further deterioration.",
+        "seconds": 4.98
+      },
+      {
+        "patient_id": 5,
+        "predicted_risk": "mid",
+        "narrative": "Prediction: \nThe patient's predicted risk level is MID, indicating a moderate to high risk of cardiovascular disease.\n\nMain contributing factors:\nThe patient's systolic blood pressure (130 mmHg) is a significant contributing factor, increasing the predicted risk level.\n\nRule-based support:\nThe patient's age (29 years) is also a contributing factor, increasing the predicted risk level.\n\nClinical interpretation:\nThe patient's elevated systolic blood pressure and age are both risk factors for cardiovascular disease. The patient's heart rate of 78 bpm is not a significant contributing factor in this context.\n\nSafety note: The patient's blood sugar level of 7.8 mmol/L is not directly related to the predicted risk of cardiovascular disease.",
+        "seconds": 4.48
+      },
+      {
+        "patient_id": 11,
+        "predicted_risk": "low",
+        "narrative": "Prediction: \nThe patient's predicted risk level is LOW, indicating a low likelihood of cardiovascular disease.\n\nMain contributing factors: \n- Age 15 years: The patient is young, which is a risk factor for cardiovascular disease.\n- SystolicBP 76 mmHg: Hypertension is a risk factor for cardiovascular disease.\n- DiastolicBP 49 mmHg: Hypertension is a risk factor for cardiovascular disease.\n\nRule-based support: \nThe patient's age and hypertension are matched with the low-risk rule, which states that if the patient is young, hypertension, and normal vital signs, the risk is low.\n\nClinical interpretation: \nBased on the evidence, the patient's risk of cardiovascular disease is low, and there is no indication of any other contributing factors. The patient's age and hypertension are not high enough to warrant further action.\n\nSafety note: \nThere are no safety concerns based on the provided evidence.",
+        "seconds": 5.94
+      }
+    ],
+    "Qwen3-1.7B": [
+      {
+        "patient_id": 6,
+        "predicted_risk": "high",
+        "narrative": "Prediction: HIGH  \nMain contributing factors: SystolicBP, BS, HeartRate  \nRule-based support: Multiple rules support high risk due to elevated BP and blood sugar levels  \nClinical interpretation: The patient has a high risk of maternal complications based on elevated blood pressure, blood sugar, and heart rate, which are strong predictors of adverse outcomes  \nSafety note: Monitor for complications such as hypertensive crisis or hyperglycemic hyperosmolar nonketotic syndrome.",
+        "seconds": 12.44
+      },
+      {
+        "patient_id": 5,
+        "predicted_risk": "mid",
+        "narrative": "Prediction: MID (89% confidence)\n\nMain contributing factors: SystolicBP, Age, HeartRate\n\nRule-based support: Age_adult, DBP_normal, SBP_elevated, Temp_normal \u2192 mid risk (54% confidence)\n\nClinical interpretation: The model predicts a mid-risk level based on elevated systolic blood pressure, age, and heart rate. These factors align with the rule-based association suggesting a mid-risk scenario.\n\nSafety note: Monitor for complications of hypertension and consider interventions based on clinical guidelines.",
+        "seconds": 9.51
+      },
+      {
+        "patient_id": 11,
+        "predicted_risk": "low",
+        "narrative": "Prediction: LOW  \nMain contributing factors: BS = 7.8 mmol/L, SystolicBP = 76 mmHg, DiastolicBP = 49 mmHg  \nRule-based support: Age_young, BS_high, SBP_normal, DBP_normal, Temp_normal are associated with low risk  \nClinical interpretation: The model predicts a low risk based on elevated blood sugar and blood pressure, despite normal temperature and heart rate  \nSafety note: Monitor for potential complications in patients with diabetes and hypertension.",
+        "seconds": 9.26
+      }
+    ],
+    "Llama-3.2-3B": [
+      {
+        "patient_id": 6,
+        "predicted_risk": "high",
+        "narrative": "Prediction: The patient is at HIGH risk for complications due to the combination of elevated systolic blood pressure, high blood sugar, and a normal body temperature.\n\nMain contributing factors: The patient's age, blood pressure, and blood sugar levels are the primary factors contributing to this high risk classification.\n\nRule-based support: The clinical associations suggest that high blood pressure, high blood sugar, and a normal body temperature are indicative of a high-risk patient, as supported by the matched clinical association rules.\n\nClinical interpretation: The patient's elevated systolic blood pressure, high blood sugar, and normal body temperature, in combination, indicate a high-risk profile that warrants close monitoring and consideration of potential complications.\n\nSafety note: The patient's high risk classification requires careful management to prevent potential complications, such as cardiovascular events or diabetic ketoacidosis, and prompt attention to their medical history and any underlying conditions.",
+        "seconds": 13.25
+      },
+      {
+        "patient_id": 5,
+        "predicted_risk": "mid",
+        "narrative": "Prediction: The patient is at a moderate risk of developing a cardiovascular event, with a predicted risk level of 89% and a confidence level of 89%.\n\nMain contributing factors: The patient's systolic blood pressure (130 mmHg), age (29 years), and heart rate (78 bpm) are the primary factors contributing to this risk assessment.\n\nRule-based support: The patient's elevated systolic blood pressure and age, along with normal diastolic blood pressure and temperature, trigger the association rule \"IF Age_adult, DBP_normal, SBP_elevated, Temp_normal THEN mid risk\", which confers a moderate risk with a confidence level of 54% and a lift of 2.3.\n\nClinical interpretation: The patient's elevated systolic blood pressure, combined with their age and normal diastolic blood pressure, suggests that they may be at increased risk for cardiovascular events. However, the confidence level of 54% indicates that this risk is not extremely high.\n\nSafety note: The patient's heart rate is within a normal range, which may help mitigate some of the risk associated with their elevated systolic blood pressure.",
+        "seconds": 21.09
+      },
+      {
+        "patient_id": 11,
+        "predicted_risk": "low",
+        "narrative": "Prediction: The patient is at a low risk for complications.\n\nMain contributing factors: The patient's age, blood sugar level, and blood pressure are the key factors contributing to this prediction. Specifically, the patient's blood sugar level of 7.8 mmol/L and blood pressure of 76 mmHg and 49 mmHg are the most significant contributors.\n\nRule-based support: The patient's profile matches the conditions of two matched clinical association rules, which predict a low risk for complications when the patient is young, has a high blood sugar level, and normal blood pressure and temperature.\n\nClinical interpretation: The patient's low risk classification is based on the presence of a high blood sugar level and normal blood pressure, which is consistent with the patient's age. This suggests that the patient's current condition is not indicative of a significant health concern.\n\nSafety note: The patient's low risk classification does not imply a complete absence of risk, and clinicians should continue to monitor the patient's condition closely.",
+        "seconds": 16.26
+      }
+    ]
+  },
+  "auto_checks": [
+    {
+      "model": "Llama-3.2-1B",
+      "patient": 6,
+      "risk": "high",
+      "format_score": 1.0,
+      "safe": true,
+      "flagged_terms": "",
+      "words": 112,
+      "seconds": 4.98
+    },
+    {
+      "model": "Llama-3.2-1B",
+      "patient": 5,
+      "risk": "mid",
+      "format_score": 1.0,
+      "safe": true,
+      "flagged_terms": "",
+      "words": 108,
+      "seconds": 4.48
+    },
+    {
+      "model": "Llama-3.2-1B",
+      "patient": 11,
+      "risk": "low",
+      "format_score": 1.0,
+      "safe": true,
+      "flagged_terms": "",
+      "words": 137,
+      "seconds": 5.94
+    },
+    {
+      "model": "Qwen3-1.7B",
+      "patient": 6,
+      "risk": "high",
+      "format_score": 1.0,
+      "safe": true,
+      "flagged_terms": "",
+      "words": 65,
+      "seconds": 12.44
+    },
+    {
+      "model": "Qwen3-1.7B",
+      "patient": 5,
+      "risk": "mid",
+      "format_score": 1.0,
+      "safe": true,
+      "flagged_terms": "",
+      "words": 64,
+      "seconds": 9.51
+    },
+    {
+      "model": "Qwen3-1.7B",
+      "patient": 11,
+      "risk": "low",
+      "format_score": 1.0,
+      "safe": true,
+      "flagged_terms": "",
+      "words": 63,
+      "seconds": 9.26
+    },
+    {
+      "model": "Llama-3.2-3B",
+      "patient": 6,
+      "risk": "high",
+      "format_score": 1.0,
+      "safe": true,
+      "flagged_terms": "",
+      "words": 142,
+      "seconds": 13.25
+    },
+    {
+      "model": "Llama-3.2-3B",
+      "patient": 5,
+      "risk": "mid",
+      "format_score": 1.0,
+      "safe": true,
+      "flagged_terms": "",
+      "words": 167,
+      "seconds": 21.09
+    },
+    {
+      "model": "Llama-3.2-3B",
+      "patient": 11,
+      "risk": "low",
+      "format_score": 1.0,
+      "safe": true,
+      "flagged_terms": "",
+      "words": 160,
+      "seconds": 16.26
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+[
+  {
+    "patient_id": 6,
+    "vitals": {
+      "Age": 63.0,
+      "SystolicBP": 140.0,
+      "DiastolicBP": 90.0,
+      "BS": 15.0,
+      "BodyTemp": 98.0,
+      "HeartRate": 90.0
+    },
+    "true_risk": "high",
+    "predicted_risk": "high",
+    "confidence": 0.975,
+    "class_probabilities": {
+      "low": 0.005,
+      "mid": 0.02,
+      "high": 0.975
+    },
+    "top_features": [
+      {
+        "feature": "SystolicBP",
+        "value": 140.0,
+        "shap": 0.2991,
+        "direction": "increases"
+      },
+      {
+        "feature": "BS",
+        "value": 15.0,
+        "shap": 0.2836,
+        "direction": "increases"
+      },
+      {
+        "feature": "HeartRate",
+        "value": 90.0,
+        "shap": 0.0384,
+        "direction": "increases"
+      }
+    ],
+    "matched_rules": [
+      {
+        "antecedent": "DBP_high, SBP_high",
+        "confidence": 1.0,
+        "lift": 4.03
+      },
+      {
+        "antecedent": "Age_older, BS_high, SBP_high, Temp_normal",
+        "confidence": 1.0,
+        "lift": 4.03
+      },
+      {
+        "antecedent": "DBP_high, SBP_high, Temp_normal",
+        "confidence": 1.0,
+        "lift": 4.03
+      }
+    ]
+  },
+  {
+    "patient_id": 5,
+    "vitals": {
+      "Age": 29.0,
+      "SystolicBP": 130.0,
+      "DiastolicBP": 70.0,
+      "BS": 7.8,
+      "BodyTemp": 98.0,
+      "HeartRate": 78.0
+    },
+    "true_risk": "mid",
+    "predicted_risk": "mid",
+    "confidence": 0.893,
+    "class_probabilities": {
+      "low": 0.072,
+      "mid": 0.893,
+      "high": 0.035
+    },
+    "top_features": [
+      {
+        "feature": "SystolicBP",
+        "value": 130.0,
+        "shap": 0.2934,
+        "direction": "increases"
+      },
+      {
+        "feature": "Age",
+        "value": 29.0,
+        "shap": 0.0804,
+        "direction": "increases"
+      },
+      {
+        "feature": "HeartRate",
+        "value": 78.0,
+        "shap": 0.0771,
+        "direction": "increases"
+      }
+    ],
+    "matched_rules": [
+      {
+        "antecedent": "Age_adult, DBP_normal, SBP_elevated, Temp_normal",
+        "confidence": 0.538,
+        "lift": 2.29
+      },
+      {
+        "antecedent": "Age_adult, DBP_normal, SBP_elevated",
+        "confidence": 0.536,
+        "lift": 2.28
+      }
+    ]
+  },
+  {
+    "patient_id": 11,
+    "vitals": {
+      "Age": 15.0,
+      "SystolicBP": 76.0,
+      "DiastolicBP": 49.0,
+      "BS": 7.8,
+      "BodyTemp": 98.0,
+      "HeartRate": 77.0
+    },
+    "true_risk": "low",
+    "predicted_risk": "low",
+    "confidence": 0.948,
+    "class_probabilities": {
+      "low": 0.948,
+      "mid": 0.045,
+      "high": 0.008
+    },
+    "top_features": [
+      {
+        "feature": "BS",
+        "value": 7.8,
+        "shap": 0.1579,
+        "direction": "increases"
+      },
+      {
+        "feature": "SystolicBP",
+        "value": 76.0,
+        "shap": 0.1266,
+        "direction": "increases"
+      },
+      {
+        "feature": "DiastolicBP",
+        "value": 49.0,
+        "shap": 0.1059,
+        "direction": "increases"
+      }
+    ],
+    "matched_rules": [
+      {
+        "antecedent": "Age_young, BS_high, SBP_normal, Temp_normal",
+        "confidence": 1.0,
+        "lift": 1.94
+      },
+      {
+        "antecedent": "Age_young, BS_high, DBP_normal, SBP_normal, Temp_normal",
+        "confidence": 1.0,
+        "lift": 1.94
+      },
+      {
+        "antecedent": "Age_young, BS_high, DBP_normal, Temp_normal",
+        "confidence": 1.0,
+        "lift": 1.94
+      }
+    ]
+  }
+]

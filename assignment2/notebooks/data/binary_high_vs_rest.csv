@@ -1,0 +1,3 @@
+,cv_F1_high,test_F1_high,precision_high,recall_high,accuracy
+Random Forest,0.754,0.744,0.8,0.696,0.879
+XGBoost,0.698,0.78,0.889,0.696,0.901

@@ -67,7 +67,8 @@ Apply Exploratory Data Analysis (EDA) and statistical hypothesis testing to a re
 ### Assignment 2 — AI for Medicine
 Apply advanced data analytics techniques to a medical or healthcare-related problem using an end-to-end data analysis pipeline.
 
-- [`assignment2/KQC7016_20252026S2_Asgn2.pdf`](assignment2/KQC7016_20252026S2_Asgn2.pdf) — Assignment brief
+- [`assignment2/README.md`](assignment2/README.md) — Assignment 2 summary, methodology, and file index
+- [`assignment2/instruction/KQC7016_20252026S2_Asgn2.pdf`](assignment2/instruction/KQC7016_20252026S2_Asgn2.pdf) — Assignment brief
 
 **Main requirements:** Technical report, maximum 15 pages, GitHub link in report, and 5-minute recorded presentation.
 

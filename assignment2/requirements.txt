@@ -1,0 +1,30 @@
+# KQC7016 Assignment 2 — Explainable Maternal Health Risk Prediction
+# Python 3 (use python3). Install: pip install -r requirements.txt
+
+# --- Core data / EDA ---
+pandas==2.2.3
+numpy==1.26.4
+scipy==1.15.2
+matplotlib==3.10.1
+seaborn==0.13.2
+
+# --- Classification ---
+scikit-learn==1.6.1
+xgboost==3.2.0
+imbalanced-learn>=0.12   # SMOTE oversampling for the resampling ablation (NB 03)
+
+# --- Association rule mining (NB 04) ---
+mlxtend>=0.23
+
+# --- Explainability (NB 05) ---
+shap>=0.46
+
+# --- SLM clinical narrative (NB 06) ---
+# GPU: RTX 3050 4GB VRAM, CUDA (torch 2.6 + cu118).
+# transformers is PINNED: 4.53.x supports Qwen3 yet avoids the torch.float8_e8m0fnu
+# attribute that transformers 5.x requires (needs torch>=2.7). Do not bump unblindly.
+transformers==4.53.2
+accelerate>=1.0
+bitsandbytes>=0.49     # 4-bit (nf4) quantisation for the 3B Llama model
+huggingface_hub>=0.24  # model download; `hf auth login` for gated Llama-3.2
+jinja2>=3.1.0          # apply_chat_template needs >=3.1 (older 3.0.x raises ImportError)

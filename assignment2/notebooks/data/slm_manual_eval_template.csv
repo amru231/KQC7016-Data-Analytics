@@ -1,0 +1,10 @@
+model,patient,risk,format_score,safe,flagged_terms,words,seconds,faithfulness_1to5,hallucination_free_1to5,readability_1to5,safety_1to5,notes
+Llama-3.2-1B,6,high,1.0,True,,112,4.98,2,2,4,4,"BS 15.0 mmol/L described as ""low"" (value contradiction); invents a ""90 mmHg threshold""; rule-support section does not cite the actual matched rules"
+Llama-3.2-1B,5,mid,1.0,True,,108,4.48,3,3,4,4,"Features roughly right but calls HR 78 a non-contributor though it is a top-3 SHAP feature; adds ""cardiovascular disease"" framing not in evidence"
+Llama-3.2-1B,11,low,1.0,True,,137,5.94,2,2,4,3,"BP 76/49 mmHg called ""hypertension"" twice (clear contradiction, low BP); invents young-age cardiovascular risk; quasi-diagnostic misstatement lowers safety"
+Qwen3-1.7B,6,high,1.0,True,,65,12.44,4,4,5,4,"Accurate and concise, factors match exactly; names HHNS/hypertensive crisis as monitoring targets (mild overreach beyond evidence)"
+Qwen3-1.7B,5,mid,1.0,True,,64,9.51,5,5,5,4,"Best mid-risk narrative: cites the exact matched rule with confidence 54%; faithful; only ""consider interventions"" is mildly generic"
+Qwen3-1.7B,11,low,1.0,True,,63,9.26,4,4,5,4,"Mostly faithful, top features exact; one misread (BP 76/49 called ""elevated""), repeats ""hypertension"" in safety note"
+Llama-3.2-3B,6,high,1.0,True,,142,13.25,4,4,5,4,"Strong and fluent; lists ""age"" instead of HeartRate among contributing factors (age not top-3); names DKA/CV events and ""medical history"" not in evidence"
+Llama-3.2-3B,5,mid,1.0,True,,167,21.09,4,4,4,5,"Features and rule cited exactly; adds ""cardiovascular event"" framing and conflates the 89% confidence with the risk level; verbose"
+Llama-3.2-3B,11,low,1.0,True,,160,16.26,5,5,5,5,"Best overall: correctly handles the tricky high-BS-but-low-risk case, calls BP normal (not hypertension), strong safety caveat (""does not imply complete absence of risk"")"
